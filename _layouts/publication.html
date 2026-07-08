@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="publication">
+  <h1>{{ page.title | escape }}</h1>
+
+  <p class="publication-meta">
+    {%- if page.authors %}{{ page.authors }}{% endif -%}
+    {%- if page.journal %} — <em>{{ page.journal }}</em>{% endif -%}
+    {%- if page.year %} ({{ page.year }}){% endif -%}
+  </p>
+
+  {%- if page.doi and page.doi != "" %}
+  <p><a href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a></p>
+  {%- endif %}
+
+  <div class="publication-abstract">
+    {{ content }}
+  </div>
+
+  <p><a href="{{ "/pages/publications.html" | relative_url }}">&larr; Volver a Publicaciones</a></p>
+</article>

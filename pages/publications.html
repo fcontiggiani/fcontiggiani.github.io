@@ -1,0 +1,22 @@
+---
+layout: page
+title: Publicaciones
+permalink: /pages/publications.html
+---
+
+{%- assign publications = site.publications | sort: "date" | reverse -%}
+
+{%- if publications.size > 0 -%}
+  <ul class="publication-list">
+    {%- for pub in publications -%}
+      <li>
+        <a href="{{ pub.url | relative_url }}">{{ pub.title | escape }}</a>
+        {%- if pub.authors %} — {{ pub.authors }}{% endif -%}
+        {%- if pub.journal %}, <em>{{ pub.journal }}</em>{% endif -%}
+        {%- if pub.year %} ({{ pub.year }}){% endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- else -%}
+  <p><em>[Aún no se han cargado publicaciones. Agregue una entrada por artículo en el directorio <code>_publications/</code>, siguiendo la estructura del archivo de ejemplo incluido allí.]</em></p>
+{%- endif -%}

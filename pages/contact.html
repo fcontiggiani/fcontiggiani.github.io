@@ -1,0 +1,24 @@
+---
+layout: page
+title: Contacto
+permalink: /pages/contact.html
+---
+
+<ul class="contact-list">
+  <li>Correo electrónico: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+  {%- if site.social_links.orcid and site.social_links.orcid != "" %}
+  <li>ORCID: <a href="{{ site.social_links.orcid }}">{{ site.social_links.orcid }}</a></li>
+  {%- endif %}
+  {%- if site.social_links.google_scholar and site.social_links.google_scholar != "" %}
+  <li>Google Scholar: <a href="{{ site.social_links.google_scholar }}">perfil académico</a></li>
+  {%- endif %}
+  {%- if site.social_links.github and site.social_links.github != "" %}
+  <li>GitHub: <a href="{{ site.social_links.github }}">{{ site.social_links.github }}</a></li>
+  {%- endif %}
+  {%- if site.social_links.linkedin and site.social_links.linkedin != "" %}
+  <li>LinkedIn: <a href="{{ site.social_links.linkedin }}">perfil profesional</a></li>
+  {%- endif %}
+  {%- if site.social_links.researchgate and site.social_links.researchgate != "" %}
+  <li>ResearchGate: <a href="{{ site.social_links.researchgate }}">perfil académico</a></li>
+  {%- endif %}
+</ul>
