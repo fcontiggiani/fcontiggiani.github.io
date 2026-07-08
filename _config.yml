@@ -27,10 +27,6 @@ url: "https://fcontiggiani.github.io" # the base hostname & protocol for your si
 twitter_username: fedecontiggiani
 github_username:  fcontiggiani
 
-author:
-  name: "F. Contiggiani"
-  email: "fcontiggiani@unrn.edu.ar"
-
 # Navegación principal, consumida desde _includes/header.html
 nav_links:
   - title: "Inicio"
