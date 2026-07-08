@@ -18,16 +18,63 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Dr. Federico E. Contiggiani
+email: fcontiggiani@unrn.edu.ar
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sitio personal con antecedentes académicos, docencia, investigacióin y publicaciones.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://fcontiggiani.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: @fedecontiggiani
+github_username:  fcontiggiani
+
+author:
+  name: "F. Contiggiani"
+  email: "correo@institucion.edu"
+
+# Navegación principal, consumida desde _includes/header.html
+nav_links:
+  - title: "Inicio"
+    url: "/"
+  - title: "Investigación"
+    url: "/pages/research.html"
+  - title: "Publicaciones"
+    url: "/pages/publications.html"
+  - title: "Docencia"
+    url: "/pages/teaching.html"
+  - title: "CV"
+    url: "/pages/cv.html"
+  - title: "Contacto"
+    url: "/pages/contact.html"
+
+# Enlaces externos a perfiles académicos, consumidos desde index.md
+social_links:
+  orcid: "https://orcid.org/0000-0002-6731-5811"
+  google_scholar: "https://scholar.google.com/citations?user=m3Eyi-MAAAAJ&hl=es"
+  github: "https://github.com/fcontiggiani"
+  linkedin: ""
+  researchgate: ""
+
+# Declaración de la colección personalizada para publicaciones
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+markdown: kramdown
+sass:
+  style: compressed
 
 # Build settings
 theme: minima
