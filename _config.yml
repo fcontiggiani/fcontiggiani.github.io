@@ -21,10 +21,10 @@
 title: Dr. Federico E. Contiggiani
 email: fcontiggiani@unrn.edu.ar
 description: >- # this means to ignore newlines until "baseurl:"
-  Sitio personal con antecedentes académicos, docencia, investigacióin y publicaciones.
+  Sitio personal con antecedentes académicos, docencia, investigación y publicaciones.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fcontiggiani.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: @fedecontiggiani
+twitter_username: fedecontiggiani
 github_username:  fcontiggiani
 
 author:
@@ -67,19 +67,16 @@ defaults:
     values:
       layout: "publication"
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
+# Build settings
+theme: minima
 markdown: kramdown
 sass:
   style: compressed
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
