@@ -326,3 +326,32 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); letter-spacing: -0.01
   .cv-intro { padding: 20px 18px; }
   .cv-facts { grid-template-columns: 1fr; }
 }
+
+// ---------- Página Investigación ----------
+.research-line h2 { line-height: 1.35; align-items: baseline; }
+.research-summary { margin: 0 0 14px; line-height: 1.7; }
+.research-axes { margin: 0; padding: 0; list-style: none; counter-reset: axis; }
+.research-axes li {
+  counter-increment: axis;
+  position: relative; margin: 0 0 10px; padding: 14px 16px 14px 52px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px; line-height: 1.6;
+  &::before {
+    content: counter(axis);
+    position: absolute; left: 16px; top: 14px;
+    display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
+    font-size: .76rem; font-weight: 600; color: var(--lake); background: var(--lake-tint);
+  }
+  strong { display: block; margin-bottom: 2px; color: var(--ink); }
+}
+.research-facts { margin-top: 18px; }
+.research-note { padding: 16px 18px; border: 1px dashed var(--line); border-radius: 12px; margin-bottom: 24px; }
+.research-refs {
+  font-size: .9rem; color: var(--ink-soft);
+  summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+  ul { margin: 10px 0 0 18px; }
+  li { margin-bottom: 6px; }
+}
+@media (max-width: 600px) {
+  .research-axes li { padding: 14px 14px 14px 46px; }
+  .research-axes li::before { left: 12px; }
+}

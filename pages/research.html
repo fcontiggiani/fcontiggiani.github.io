@@ -2,23 +2,87 @@
 layout: page
 title: Investigación
 permalink: /pages/research.html
+description: "Línea de investigación de Federico E. Contiggiani: agentes económicos computacionales con fundamentos cognitivos e IA generativa."
 ---
 
-<section class="research-overview">
-  <p><em>[Complete esta sección con una síntesis de sus líneas de investigación, entre dos y cuatro párrafos.]</em></p>
-</section>
+<div class="cv-page">
 
-<section class="research-lines">
-  <h2>Líneas de investigación</h2>
-  <ul>
-    <li>[Línea de investigación 1 — breve descripción]</li>
-    <li>[Línea de investigación 2 — breve descripción]</li>
-  </ul>
-</section>
+  <section class="cv-intro research-intro" aria-label="Presentación">
+    <p class="cv-kicker">Agenda de investigación · IIPPyG, Universidad Nacional de Río Negro</p>
+    <p class="cv-lead">
+      La agenda de investigación desarrolla modelos de agente económico cuyo proceso de decisión se funda en
+      principios cognitivos —memoria, analogía y narrativas— y explora los modelos de lenguaje de gran escala
+      (LLM) como motor de esos agentes, con el propósito de analizar escenarios de política pública y sus
+      efectos sobre los resultados sociales.
+    </p>
+  </section>
 
-<section class="research-projects">
-  <h2>Proyectos vigentes</h2>
-  <ul>
-    <li>[Nombre del proyecto — entidad financiadora, período, rol desempeñado]</li>
-  </ul>
-</section>
+  <!-- ===================== LÍNEA 1 ===================== -->
+  <section class="cv-section research-line" aria-labelledby="linea-1">
+    <h2 id="linea-1"><span class="cv-num">I</span>Agentes económicos computacionales con fundamentos cognitivos e IA generativa</h2>
+
+    <p class="research-summary">
+      Esta línea busca construir modelos de agente económico en los que la elección no resulte de la
+      maximización de una función de utilidad dada, sino de un proceso computacional que reproduce rasgos
+      documentados de la cognición humana. El punto de partida es la Teoría de la Decisión Basada en Casos
+      (CBDT; Gilboa y Schmeidler, 1995), según la cual el decisor evalúa un problema nuevo comparándolo, por
+      analogía, con los casos almacenados en su memoria y ponderando los resultados observados según el grado
+      de similitud entre problemas.
+    </p>
+    <p class="research-summary">
+      Trabajos previos propusieron una versión geométrica de la CBDT, en la que la memoria se representa como un
+      grafo de casos y la similitud se deriva de distancias en ese grafo (Contiggiani, Delbianco y Tohmé, 2020).
+      La agenda actual extiende ese marco para incorporar las narrativas —historias, relatos y marcos
+      interpretativos— que acompañan a los casos en la memoria episódica, bajo la hipótesis de que condicionan
+      qué experiencias resultan relevantes y pueden conducir a resultados sociales subóptimos, como la falta de
+      cooperación en dilemas sociales (Shiller, 2017). Los modelos de lenguaje de gran escala ofrecen, por primera
+      vez, una tecnología capaz de operar sobre contenidos textuales de ese tipo y, por ello, se incorporan como
+      componente cognitivo de los agentes, siempre disciplinados por una teoría formal de la elección.
+    </p>
+
+    <h3>Ejes de trabajo</h3>
+    <ol class="research-axes">
+      <li>
+        <strong>La CBDT como arquitectura de recuperación de información.</strong>
+        La memoria de casos se implementa como base vectorial o grafo de conocimiento, y la función de similitud
+        se aproxima mediante representaciones semánticas (<em>embeddings</em>). El agente recupera los casos y
+        narrativas pertinentes y el LLM evalúa las alternativas condicionado a esa memoria. De este modo, la
+        similitud deja de ser un primitivo exógeno y se convierte en un objeto estimable y contrastable.
+      </li>
+      <li>
+        <strong>Agentes LLM como sujetos experimentales simulados.</strong>
+        Se replican con agentes artificiales experimentos de elección administrados por encuesta, para
+        determinar en qué condiciones reproducen, sesgan o amplifican los efectos de enmarque y de narrativa
+        observados en sujetos humanos (Horton, 2023; Argyle et al., 2023).
+      </li>
+      <li>
+        <strong>Sociedades de agentes generativos.</strong>
+        Los agentes se insertan en entornos multiagente —bienes públicos y comunes, cumplimiento tributario,
+        gestión de recursos naturales— para estudiar la propagación de narrativas y la emergencia de equilibrios
+        sociales subóptimos, con implicancias para el diseño institucional (Ostrom, 2009; Park et al., 2023).
+      </li>
+    </ol>
+  </section>
+
+  <p class="cv-note research-note">
+    <strong>Criterio transversal.</strong> El uso de modelos de lenguaje en investigación económica plantea riesgos
+    específicos —dependencia de modelos propietarios, inestabilidad entre versiones, contaminación de datos de
+    entrenamiento y sesgos hacia el conocimiento producido en los centros—. La línea adopta protocolos de
+    registro de versiones, semillas e instrucciones, preferencia por modelos de pesos abiertos cuando es viable
+    y contraste sistemático con evidencia experimental humana.
+  </p>
+
+  <details class="research-refs">
+    <summary>Referencias citadas</summary>
+    <ul>
+      <li>Argyle, L. P. et al. (2023). Out of one, many: Using language models to simulate human samples. <em>Political Analysis</em>, 31(3), 337–351.</li>
+      <li>Contiggiani, F., Delbianco, F. y Tohmé, F. (2020). A graph-based similarity function for CBDT: acquiring and using new information. <em>Anales de la AAEP</em>; arXiv:2104.14268.</li>
+      <li>Gilboa, I. y Schmeidler, D. (1995). Case-based decision theory. <em>The Quarterly Journal of Economics</em>, 110(3), 605–639.</li>
+      <li>Horton, J. J. (2023). Large language models as simulated economic agents: What can we learn from homo silicus? NBER Working Paper 31122.</li>
+      <li>Ostrom, E. (2009). <em>Understanding institutional diversity</em>. Princeton University Press.</li>
+      <li>Park, J. S. et al. (2023). Generative agents: Interactive simulacra of human behavior. <em>Proceedings of UIST '23</em>.</li>
+      <li>Shiller, R. J. (2017). Narrative economics. <em>American Economic Review</em>, 107(4), 967–1004.</li>
+    </ul>
+  </details>
+
+</div>
