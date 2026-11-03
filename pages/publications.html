@@ -2,21 +2,36 @@
 layout: page
 title: Publicaciones
 permalink: /pages/publications.html
+description: "Publicaciones seleccionadas de Federico E. Contiggiani: artículos en revistas, capítulos de libro y actas de congresos."
 ---
 
-{%- assign publications = site.publications | sort: "date" | reverse -%}
+<div class="cv-page">
 
-{%- if publications.size > 0 -%}
-  <ul class="publication-list">
-    {%- for pub in publications -%}
-      <li>
-        <a href="{{ pub.url | relative_url }}">{{ pub.title | escape }}</a>
-        {%- if pub.authors %} — {{ pub.authors }}{% endif -%}
-        {%- if pub.journal %}, <em>{{ pub.journal }}</em>{% endif -%}
-        {%- if pub.year %} ({{ pub.year }}){% endif -%}
-      </li>
-    {%- endfor -%}
-  </ul>
-{%- else -%}
-  <p><em>[Aún no se han cargado publicaciones. Agregue una entrada por artículo en el directorio <code>_publications/</code>, siguiendo la estructura del archivo de ejemplo incluido allí.]</em></p>
-{%- endif -%}
+  <section class="cv-section" aria-labelledby="pub-revistas">
+    <h2 id="pub-revistas"><span class="cv-num">I</span>Artículos en revistas</h2>
+    <ol class="cv-pubs">
+      <li>Delbianco, F.; <strong>Contiggiani, F.</strong>; Fioriti, A.; Tohmé, F. (2026). «Detecting causal relations among symbolic time series». <em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>, 36(1).</li>
+      <li>Delbianco, F.; Fioriti, A.; Tohmé, F.; <strong>Contiggiani, F.</strong> (2021). «A tale of two narratives: assessing the sociological hypothesis of the appeal of the US dollar in Argentina». <em>Quality &amp; Quantity</em>, 56(5), 3519–3537.</li>
+      <li><strong>Contiggiani, F.</strong> (2012). «La inconsistencia de las elecciones intertemporales: un análisis desde la neuroeconomía». <em>Estudios Económicos</em>, XXIX(58), 13–37.</li>
+      <li><strong>Contiggiani, F.</strong> (2007). «A neural network approach of the dynamical inconsistency problem of decisions». <em>Mecánica Computacional</em>, XXVI, 501–512.</li>
+      <li>Caramuta, D.; <strong>Contiggiani, F.</strong> (2006). «A fuzzy set approach to poverty measurement». <em>Fuzzy Economic Review</em>, XI(1), 37–55.</li>
+    </ol>
+  </section>
+
+  <section class="cv-section" aria-labelledby="pub-capitulos">
+    <h2 id="pub-capitulos"><span class="cv-num">II</span>Capítulos de libro y actas</h2>
+    <ol class="cv-pubs" start="6" style="counter-reset: pub 5;">
+      <li><strong>Contiggiani, F.</strong>; Delbianco, F.; Tohmé, F. (2020). «A graph-based similarity function for CBDT: acquiring and using new information». <em>Anales de la Asociación Argentina de Economía Política</em>.</li>
+      <li><strong>Contiggiani, F.</strong>; Gutiérrez, J.; Bohoslavsky, P. (2020). «Técnicas empíricas de atribución causal para la evaluación de impactos de programas de desarrollo económico y territorial». En Villegas Nigra, Miñon y Tagliani (eds.), <em>Aspectos teóricos, metodológicos y empíricos para el estudio de los territorios</em>. Viedma: Universidad Nacional del Comahue.</li>
+      <li><strong>Contiggiani, F.</strong>; Gutiérrez, J.; Bohoslavsky, P. (2018). «Técnicas de evaluación de impacto de programas con atribución causal». <em>Actas de las VI Jornadas de Investigación y Extensión del CURZA</em>.</li>
+      <li>Rul, M. E.; <strong>Contiggiani, F.</strong>; Castellano, A. (2017). «Etiquetado nutricional: abordaje de distintos sistemas desde una perspectiva de la <em>behavioral economics</em>». <em>Anales de la AAEP</em>.</li>
+    </ol>
+  </section>
+
+  <p class="cv-note">
+    Selección de trabajos. El listado completo está disponible en
+    {%- if site.social_links.google_scholar != "" %} <a href="{{ site.social_links.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{% endif %}
+    {%- if site.social_links.orcid != "" %} y <a href="{{ site.social_links.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>{% endif %}.
+  </p>
+
+</div>
