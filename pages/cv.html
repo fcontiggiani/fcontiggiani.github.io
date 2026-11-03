@@ -1,25 +1,125 @@
 ---
 layout: page
-title: CV
+title: Curriculum Vitae
 permalink: /pages/cv.html
+description: "CV abreviado de Federico E. Contiggiani: gestión universitaria, producción académica, proyectos de I+D, docencia y formación."
 ---
 
-<p>[Incluya aquí una síntesis curricular. Si desea ofrecer además la descarga del CV completo en PDF, coloque el archivo en <code>/assets/cv/</code> y descomente el enlace siguiente:]</p>
+<div class="cv-page">
 
-{%- comment -%}
-<p><a href="{{ "/assets/cv/cv-contiggiani.pdf" | relative_url }}">Descargar CV completo (PDF)</a></p>
-{%- endcomment -%}
+  <section class="cv-intro" aria-label="Resumen">
+    <p class="cv-kicker">Versión abreviada · actualizada a octubre de 2026</p>
+    <p class="cv-lead">
+      Doctor en Economía (Universidad Nacional del Sur, 2010) especializado en economía del comportamiento,
+      teoría de la decisión y evaluación de impacto de políticas públicas. <strong>Profesor Adjunto regular</strong>
+      de la Universidad Nacional de Río Negro e investigador del <strong>IIPPyG</strong>, Sede Atlántica.
+      Desde 2021 dirige la Especialización en Ciencia de Datos Aplicada y entre 2023 y 2026 fue
+      Subsecretario de Posgrado de la Sede Atlántica.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/assets/cv/cv-contiggiani.pdf' | relative_url }}" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Descargar CV (PDF)
+      </a>
+      {%- if site.social_links.orcid != "" %}
+      <a class="btn btn-ghost" href="{{ site.social_links.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a>
+      {%- endif %}
+      {%- if site.social_links.google_scholar != "" %}
+      <a class="btn btn-ghost" href="{{ site.social_links.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      {%- endif %}
+    </div>
+  </section>
 
-<section class="cv-education">
-  <h2>Formación académica</h2>
-  <ul>
-    <li>[Título — institución, año]</li>
-  </ul>
-</section>
+  <section class="cv-section" aria-labelledby="cv-gestion">
+    <h2 id="cv-gestion"><span class="cv-num">I</span>Gestión universitaria e institucional</h2>
+    <ul class="cv-entries">
+      <li class="is-key"><span class="cv-when">2023 – 2026</span><span><strong>Subsecretario de Posgrado</strong> · <span class="cv-inst">Sede Atlántica, UNRN</span></span></li>
+      <li class="is-key"><span class="cv-when">2021 – actualidad</span><span><strong>Director de la Especialización en Ciencia de Datos Aplicada</strong> · <span class="cv-inst">UNRN</span></span></li>
+      <li><span class="cv-when">2019 – 2026</span><span>Integrante de la Junta Electoral · <span class="cv-inst">UNRN</span></span></li>
+      <li><span class="cv-when">2018 – 2021</span><span>Comisión Asesora para la acreditación de Contador Público ante CONEAU · <span class="cv-inst">Sede Atlántica, UNRN</span></span></li>
+      <li><span class="cv-when">2011 – 2021</span><span>Consejero de los consejos de Sede y Superior, en períodos sucesivos · <span class="cv-inst">UNRN</span></span></li>
+      <li><span class="cv-when">2016 – 2018</span><span>Titular del Consejo Asesor de la Carrera de Contador Público · <span class="cv-inst">Sede Atlántica, UNRN</span></span></li>
+      <li><span class="cv-when">2014 – 2016</span><span>Consultor externo · <span class="cv-inst">Organización Internacional para las Migraciones (OIM)</span></span></li>
+      <li><span class="cv-when">2013 – 2014</span><span>Subsecretario de Planificación y Coordinación Administrativa · <span class="cv-inst">Ministerio de Salud</span></span></li>
+    </ul>
 
-<section class="cv-positions">
-  <h2>Cargos y antecedentes profesionales</h2>
-  <ul>
-    <li>[Cargo — institución, período]</li>
-  </ul>
-</section>
+    <h3>Asistencia técnica al sector público</h3>
+    <ul class="cv-entries">
+      <li><span class="cv-when">2022</span><span>Fortalecimiento del Observatorio del Delito y la Violencia para la II Encuesta de Victimización y Percepción de la Seguridad · <span class="cv-inst">Ministerio de Seguridad y Justicia de Río Negro</span> <span class="cv-tag">Responsable</span></span></li>
+      <li><span class="cv-when">2021 – 2022</span><span>Identificación de la producción pública orientada a reducir brechas de género en el Presupuesto 2022 · <span class="cv-inst">Ministerio de Hacienda de Río Negro</span></span></li>
+      <li><span class="cv-when">2020</span><span>Estudio socioeconómico y ambiental del Proyecto Calcatreu (Etapa 1) · <span class="cv-inst">Río Negro</span></span></li>
+      <li><span class="cv-when">2019</span><span>Relevamiento de la estructura programática presupuestaria del Sector Público Provincial orientada a la Gestión por Resultados; curso «Introducción a la Ciencia de Datos» para la Agencia de Recaudación Tributaria de Río Negro</span></li>
+    </ul>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-produccion">
+    <h2 id="cv-produccion"><span class="cv-num">II</span>Producción académica</h2>
+    <h3>Publicaciones seleccionadas</h3>
+    <ol class="cv-pubs">
+      <li>Delbianco, F.; <strong>Contiggiani, F.</strong>; Fioriti, A.; Tohmé, F. (2026). «Detecting causal relations among symbolic time series». <em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>, 36(1).</li>
+      <li>Delbianco, F.; Fioriti, A.; Tohmé, F.; <strong>Contiggiani, F.</strong> (2021). «A tale of two narratives: assessing the sociological hypothesis of the appeal of the US dollar in Argentina». <em>Quality &amp; Quantity</em>, 56(5), 3519–3537.</li>
+      <li><strong>Contiggiani, F.</strong>; Delbianco, F.; Tohmé, F. (2020). «A graph-based similarity function for CBDT: acquiring and using new information». <em>Anales de la Asociación Argentina de Economía Política</em>.</li>
+      <li><strong>Contiggiani, F.</strong>; Gutiérrez, J.; Bohoslavsky, P. (2020). «Técnicas empíricas de atribución causal para la evaluación de impactos de programas de desarrollo económico y territorial». En Villegas Nigra, Miñon y Tagliani (eds.), <em>Aspectos teóricos, metodológicos y empíricos para el estudio de los territorios</em>. Viedma: Universidad Nacional del Comahue.</li>
+      <li><strong>Contiggiani, F.</strong>; Gutiérrez, J.; Bohoslavsky, P. (2018). «Técnicas de evaluación de impacto de programas con atribución causal». <em>Actas de las VI Jornadas de Investigación y Extensión del CURZA</em>.</li>
+      <li>Rul, M. E.; <strong>Contiggiani, F.</strong>; Castellano, A. (2017). «Etiquetado nutricional: abordaje de distintos sistemas desde una perspectiva de la <em>behavioral economics</em>». <em>Anales de la AAEP</em>.</li>
+      <li><strong>Contiggiani, F.</strong> (2012). «La inconsistencia de las elecciones intertemporales: un análisis desde la neuroeconomía». <em>Estudios Económicos</em>, XXIX(58), 13–37.</li>
+      <li><strong>Contiggiani, F.</strong> (2007). «A neural network approach of the dynamical inconsistency problem of decisions». <em>Mecánica Computacional</em>, XXVI, 501–512.</li>
+      <li>Caramuta, D.; <strong>Contiggiani, F.</strong> (2006). «A fuzzy set approach to poverty measurement». <em>Fuzzy Economic Review</em>, XI(1), 37–55.</li>
+    </ol>
+    <p class="cv-note"><strong>Presentaciones recientes.</strong> «Symbolic time series and causality detection: an uneasy alliance», IV Jornadas Interdisciplinarias en Sistemas Complejos, IIESS (CONICET–UNS), 2021, conferencista; LV Reunión Anual de la AAEP, 2020; LACEA–LAMES Annual Meeting, Universidad de San Andrés, 2017.</p>
+
+    <h3>Proyectos de I+D</h3>
+    <ul class="cv-entries">
+      <li class="is-key"><span class="cv-when">2025 – 2028</span><span><strong>Modelos conductuales de decisión y políticas públicas: integrando narrativas en la toma de decisiones y su impacto sobre resultados sociales</strong> · <span class="cv-inst">PI 40-C-1256, UNRN</span> <span class="cv-tag">Director</span></span></li>
+      <li><span class="cv-when">2024 – 2025</span><span>Violencias y estatalidad: lógicas y prácticas de seguridad en Río Negro · <span class="cv-inst">UNRN</span> <span class="cv-tag">Investigador</span></span></li>
+      <li><span class="cv-when">2021 – 2024</span><span>PICT-2019-I-A: Dispositivo para el análisis, seguimiento y evaluación de las políticas públicas de la Provincia de Río Negro (dir. L. Luchessi) · <span class="cv-inst">FONCyT, Agencia I+D+i</span> <span class="cv-tag">Investigador</span></span></li>
+      <li class="is-key"><span class="cv-when">2020 – 2023</span><span><strong>Evaluación de impacto de políticas públicas: métodos y aplicaciones para desarrollo económico regional</strong> · <span class="cv-inst">PI 40-C-817, UNRN</span> <span class="cv-tag">Director</span></span></li>
+      <li class="is-key"><span class="cv-when">2017 – 2020</span><span><strong>Herramientas cuantitativas para la evaluación de impacto de políticas públicas</strong> · <span class="cv-inst">PI 40-C-561, UNRN</span> <span class="cv-tag">Director</span></span></li>
+    </ul>
+
+    <h3>Formación de recursos humanos</h3>
+    <ul class="cv-list">
+      <li>Codirección de becas CONICET de D. Noguera: doctoral (2022–2024, IIPPyG–UNRN) y posdoctoral (2024–2026, IIESS CONICET–UNS).</li>
+      <li>Dirección de becas de Iniciación a la Investigación UNRN (2019) y CIN (2020).</li>
+      <li>Dirección de dos trabajos finales de grado (UNRN, 2020–2022) y de cuatro pasantías pre-profesionales (2019–2020).</li>
+    </ul>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-docencia">
+    <h2 id="cv-docencia"><span class="cv-num">III</span>Docencia</h2>
+    <ul class="cv-entries">
+      <li class="is-key"><span class="cv-when">2011 – actualidad</span><span><strong>Profesor Adjunto regular (por concurso), dedicación completa</strong> — Cuentas Nacionales y Microeconomía (Contador Público) · <span class="cv-inst">Sede Atlántica, UNRN</span></span></li>
+      <li><span class="cv-when">Grado</span><span>Herramientas Cuantitativas para la Evaluación de Políticas Públicas, Economía Ambiental, Ciencia de Datos Aplicada, Introducción a la Economía, Teoría de la Decisión</span></li>
+      <li><span class="cv-when">2022 – 2026</span><span>Posgrado y cursos: Herramientas Cuantitativas (profesor visitante, Universidad Nacional de Tierra del Fuego, 2026; UNRN, 2025; Sede Andina UNRN, 2025–2026); Metodología de la Investigación 2 (UNRN, 2026); Evaluación de Impacto de Políticas Públicas (UNRN, 2022 y 2025); Análisis de Inferencia Causal (UNRN, 2024); Métodos Estadísticos (UNRN, 2023)</span></li>
+    </ul>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-formacion">
+    <h2 id="cv-formacion"><span class="cv-num">IV</span>Formación académica</h2>
+    <ul class="cv-entries">
+      <li><span class="cv-when">2025 – 2026</span><span><strong>Diplomatura de Extensión Universitaria en Inteligencia Artificial en la Gestión Universitaria</strong> · <span class="cv-inst">Universidad Nacional de Río Negro</span></span></li>
+      <li><span class="cv-when">2012 – 2013</span><span>Estancia posdoctoral, beca Erasmus Mundus ARTESS · <span class="cv-inst">Universidad de Salamanca, España</span></span></li>
+      <li><span class="cv-when">2010 – 2012</span><span>Beca posdoctoral · <span class="cv-inst">CONICET</span></span></li>
+      <li><span class="cv-when">2010</span><span>Estancia de investigación en economía experimental (anfitrión: S. Mestelman) · <span class="cv-inst">McMaster University, Canadá</span></span></li>
+      <li class="is-key"><span class="cv-when">2010</span><span><strong>Doctor en Economía</strong>, con beca doctoral CONICET · <span class="cv-inst">Universidad Nacional del Sur</span></span></li>
+      <li class="is-key"><span class="cv-when">2005</span><span><strong>Licenciado en Economía</strong> · <span class="cv-inst">Universidad Nacional del Sur</span></span></li>
+    </ul>
+    <p class="cv-note"><strong>Formación complementaria reciente.</strong> Análisis de Datos Espaciales (UNS, 2023); Economía del Comportamiento para Mejores Políticas Públicas (BID, 2020); Data Analysis for Social Scientists y Foundations of Development Policy (MITx, 2016).</p>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-evaluacion">
+    <h2 id="cv-evaluacion"><span class="cv-num">V</span>Evaluación, categorización y membresías</h2>
+    <ul class="cv-list">
+      <li><strong>Categoría IV</strong> del Programa de Incentivos a Docentes Investigadores (2016).</li>
+      <li>Evaluador de pares para la promoción en la carrera docente con rol investigador, UNRN (2025 – actualidad), e integrante del comité evaluador de Ciencias Sociales del Sistema Nacional de Investigación de Panamá, SENACYT (2025).</li>
+      <li>Árbitro de <em>The Latin American and Iberian Journal of Law and Economics</em> (desde 2018) y <em>Trayectorias</em>.</li>
+      <li>Miembro de The Econometric Society, Economic Science Association y Asociación Argentina de Economía Política.</li>
+      <li>Mención Especial, Concurso Joven Investigador AAEP (2005).</li>
+    </ul>
+    <dl class="cv-facts">
+      <dt>Herramientas</dt><dd>R, Stata, EViews, Python / ciencia de datos, Mathematica, Matlab, z-Tree</dd>
+      <dt>Idiomas</dt><dd>Español (nativo) · Inglés (avanzado)</dd>
+    </dl>
+  </section>
+
+</div>
